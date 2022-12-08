@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@xiaowenzi/algorithm.js": "^0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0"
   }
 }
