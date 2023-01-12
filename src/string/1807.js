@@ -4,11 +4,12 @@
  * @return {string}
  */
 var evaluate = function (s, knowledge) {
-  const map = new Map();
+  // const map = new Map();
 
-  knowledge.forEach((item) => {
-    map.set(item[0], item[1]);
-  });
+  // knowledge.forEach((item) => {
+  //   map.set(item[0], item[1]);
+  // });
+  const map = new Map(knowledge);
   return s.replace(/\((.*?)\)/g, ($1, $2) => {
     if ($1) {
       return map.get($2) || '?';
