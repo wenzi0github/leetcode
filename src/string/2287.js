@@ -20,7 +20,6 @@ var rearrangeCharacters = function (s, target) {
     sourceMap.set(s[i], (sourceMap.get(s[i]) || 0) + 1);
   }
 
-  // eslint-disable-next-line no-constant-condition
   while (count <= s.length) {
     for (let i = 0; i < target.length; i++) {
       const num = sourceMap.get(target[i]);
@@ -33,6 +32,8 @@ var rearrangeCharacters = function (s, target) {
     }
     count++;
   }
+
+  // 极端情况，target只有一个字符，s全是target的字符组成
   return count;
 };
 
