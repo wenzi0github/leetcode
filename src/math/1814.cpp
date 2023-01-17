@@ -6,8 +6,6 @@
 
 using namespace std;
 
-#define DIVISOR 1000000007;
-
 class Solution
 {
 public:
@@ -15,6 +13,7 @@ public:
   {
     int i, size;
     long long count;
+    int DIVISOR 1000000007;
     unordered_map<int, long> revNumMap;
     count = 0;
     size = (int)nums.size();
