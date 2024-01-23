@@ -20,4 +20,5 @@ const arr2linked = (arr) => {
 
   return head;
 };
-console.log(arr2linked([7, 2, 4, 3]));
+// console.log(arr2linked([7, 2, 4, 3]));
+module.export = arr2linked;
